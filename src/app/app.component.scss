@@ -1,0 +1,130 @@
+
+ .light-mode{
+   --white-bg: #f4f4f4;
+   --blue-bg: #96d4fc;
+   --button-bg-color: #b5dffd;
+   --font-color: #383838;
+ }
+
+  .dark-mode {
+    --white-bg: #262729;
+    --blue-bg: #133c57;
+    --button-bg-color: #0e273c;
+    --font-color: #f4f4f4;
+  }
+
+.main{
+  width: 440px;
+  height: 700px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-radius: 40px;
+  background-color: var(--blue-bg);
+}
+.display{
+  width: 100%;
+  height: 280px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: var(--white-bg);
+}
+.keyboard{
+  width: 440px;
+  height: 420px;
+  padding: 20px;
+}
+.font{
+  color:var(--font-color)
+}
+.operators{
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  height: 380px;
+  background-color: var(--button-bg-color);
+  div{
+    border-radius: 40px;
+    display: flex;
+    height: 74px;
+    justify-content: center;
+    place-items: center;
+  }
+}
+.lastdiv{
+  background-color: white;
+}
+.kalans{
+  display: flex;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  width: 85%;
+  height: 60px;
+  background-color: var(--button-bg-color);
+  padding-right: 10px;
+  padding-left: 10px;
+  div{
+    border-radius: 40px;
+    width: 70px;
+    place-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+.numbers{
+  justify-content: space-between;
+  float: left;
+  display: flex;
+  height: 370px;
+  padding-right: 15px;
+  padding-left: 10px;
+  flex-wrap: wrap;
+  div{
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 65px;
+    height: 65px;
+    background-color: var(--button-bg-color);
+    place-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+.theme-toggle-container{
+  position: relative; /* Konumu ayarlamak için */
+  display: flex;
+  justify-content: center; /* Yatayda ortalamak için */
+  width: 140px;
+  top: 10px;
+  height: 60px;
+  border-radius: 40px;
+  padding-top: 5px;
+  left: 150px;
+  background-color: #b5dffd;
+}
+  .theme-toggle {
+    position: relative;
+    height: 50px;
+    background-color: #b5dffd;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Kayma efekti için geçiş ekleyin */
+    z-index: 3; /* Ikonların diğer içeriklerin üstünde olmasını sağlayın */
+  }
+
+  .theme-toggle:hover {
+    transform: scale(1.2); /* İkonun tıklanabilirliği artırmak için kayma efekti ekleyin */
+  }
+
+  .dark-mode .theme-toggle {
+    background-color: #0e273c;
+    color: #f4f4f4;
+  }
+
+  .dark-mode .theme-toggle-container{
+    background-color: #0e273c;
+  }
