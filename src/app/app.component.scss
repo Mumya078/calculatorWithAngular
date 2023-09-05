@@ -21,11 +21,19 @@
   border-radius: 40px;
   background-color: var(--blue-bg);
 }
+
+
+
 .display{
-  width: 100%;
+  width: 440px;
   height: 280px;
   border-radius: 40px 40px 0px 0px;
   background-color: var(--white-bg);
+}
+
+.icons{
+  width: 100%;
+  height: 80px;
 }
 .keyboard{
   width: 440px;
@@ -92,15 +100,13 @@
   }
 }
 .theme-toggle-container{
-  position: relative; /* Konumu ayarlamak için */
   display: flex;
   justify-content: center; /* Yatayda ortalamak için */
   width: 140px;
-  top: 10px;
   height: 60px;
   border-radius: 40px;
   padding-top: 5px;
-  left: 150px;
+  margin-top: 10px;
   background-color: #b5dffd;
 }
   .theme-toggle {
@@ -127,4 +133,93 @@
 
   .dark-mode .theme-toggle-container{
     background-color: #0e273c;
+  }
+  .sonuc{
+    width: 100%;
+    height: 200px;
+    padding-right: 15px;
+  }
+  .girilen{
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    height:   50px;
+  }
+  .toplam{
+    width: 100%;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .history{
+    padding-left: 100px;
+    padding-top: 15px;
+    color:var(--font-color);
+  }
+  .showhis{
+    width: 100%;
+    min-height: 80px;
+    height: 80px;
+  }
+
+  @media (max-width: 767px) {
+    .main{
+      width: 400px;
+      height: 630px;
+    }
+    .keyboard{
+      width: 380px;
+      height: 380px;
+      padding: 10px;
+    }
+    .operators{
+      display: flex;
+      flex-direction: column;
+      border-radius: 40px;
+      padding-top: 10px;
+      margin-bottom: 5px;
+      height: 360px;
+      width: 60px;
+      background-color: var(--button-bg-color);
+      div{
+        border-radius: 40px;
+        display: flex;
+        height: 74px;
+        justify-content: center;
+        place-items: center;
+      }
+    }
+    .theme-toggle-container{
+
+      width: 140px;
+      top: 10px;
+      left: 130px;
+    }
+    .sonuc{
+      width: 400px;
+      height: 170px;
+    }
+    .girilen{
+      width: 400px;
+      height:   40px;
+      padding-right: 10px;
+    }
+    .toplam{
+      width: 400px;
+      height: 70px;
+      padding-right: 10px;
+    }
+    .history{
+      padding-left: 80px;
+      padding-top: 15px;
+      color:var(--font-color);
+    }
+    .showhis{
+      width: 100%;
+      min-height: 40px;
+      height: 80px;
+    }
+    .display{
+      width: 400px;
+      height: 280px;
+    }
   }
